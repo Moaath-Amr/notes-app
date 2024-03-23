@@ -24,6 +24,7 @@ class CustomItem extends StatelessWidget {
         child: Icon(
           icon,
           size: 28,
+          color: Colors.black,
         ),
       ),
     );

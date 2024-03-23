@@ -24,6 +24,7 @@ class CustomNoteItem extends StatelessWidget {
                   Text(
                     'Flutter Tips',
                     style: TextStyle(
+                      color: Colors.black,
                       fontSize: 24
                     ),
                   ),
