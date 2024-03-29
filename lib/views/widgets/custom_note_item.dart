@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/views/widgets/custom_item.dart';
+import 'package:notes_app/views/widgets/edit_notes_view.dart';
 
 class CustomNoteItem extends StatelessWidget {
   const CustomNoteItem({super.key});
@@ -8,7 +9,9 @@ class CustomNoteItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (context) => const EditNoteView()),
+        );
       },
       child: Container(
         width: double.infinity,
